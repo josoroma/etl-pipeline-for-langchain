@@ -1,0 +1,6 @@
+.DS_Store
+.aider.*
+__pycache__
+etl/DATA_*
+etl/LOG*
+.env
