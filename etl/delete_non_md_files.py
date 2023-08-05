@@ -13,8 +13,8 @@ logger = Logger()
 
 class DeleteNonMdFiles(luigi.Task):
     """
-    Task to delete all non-Markdown (.md) files from a specified directory 
-    and its subdirectories. 
+    Task to delete all non-Markdown (.md) files from a specified directory
+    and its subdirectories.
 
     Parameters:
     directory: str
@@ -53,7 +53,7 @@ class DeleteNonMdFiles(luigi.Task):
 
     def requires(self):
         """
-        Specifies the dependency of this task. This task requires the completion 
+        Specifies the dependency of this task. This task requires the completion
         of the ConvertPytoMd task.
 
         Returns:
@@ -101,7 +101,7 @@ class DeleteNonMdFiles(luigi.Task):
 
     def output(self):
         """
-        Specifies the output of this task. The output is a log file containing 
+        Specifies the output of this task. The output is a log file containing
         the status of each deletion.
 
         Returns:

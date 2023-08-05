@@ -44,7 +44,7 @@ class Orchestrator(luigi.WrapperTask):
             out_file.write(f"{ACTION['START']} - {datetime.datetime.now().strftime(DATA['DATETIME'])}\n")
 
         logger.ok(ACTION['OK'], "Build Data Lake - End - Requires")
-        return Upsert(f"{DIRECTORY}/docs/extras", self.date_time)
+        return Upsert(DIRECTORY, self.date_time)
 
     def run(self):
         """

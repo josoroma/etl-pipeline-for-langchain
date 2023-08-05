@@ -13,13 +13,13 @@ logger = Logger()
 
 class ConvertIPYNBtoMyst(luigi.Task):
     """
-    Task to convert Jupyter notebook (.ipynb) files to markdown (.md) files 
-    using the jupytext command line tool. 
+    Task to convert Jupyter notebook (.ipynb) files to markdown (.md) files
+    using the jupytext command line tool.
 
     Parameters:
     directory: str
         The directory where the .ipynb files to be converted are located.
-        Default is f"{DATA['LAKE']}/docs/extras".
+        Default is DATA['LAKE'].
     date_time: str
         The date and time when the task is run, used for logging.
         Default is the current date and time.
@@ -42,7 +42,7 @@ class ConvertIPYNBtoMyst(luigi.Task):
     This task does not return any value. The result is the conversion of .ipynb files to .md files.
     """
 
-    default_directory = f"{DATA['LAKE']}/docs/extras"
+    default_directory = DATA['LAKE']
     default_date_time = datetime.datetime.now().strftime(DATA["DATETIME"])
 
     directory = luigi.Parameter(default=default_directory)
