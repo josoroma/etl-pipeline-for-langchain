@@ -5,7 +5,7 @@ from pydantic import BaseModel
 import streamlit as st
 
 DEFAULT_ASSISTANT_PROMPT = "How can I help you?"
-GENERATE_PROMPT = "Act as a helpful Python and Langchain Developer, please reply with the complete number of block or blocks of codes and nothing else, skip explanations: {content}"
+GENERATE_PROMPT = "Act as a helpful Python and Langchain Developer, please reply with the blocks of code and nothing else, skip explanations: {content}"
 
 class Document(BaseModel):
     """
