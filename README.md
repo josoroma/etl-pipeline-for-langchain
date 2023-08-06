@@ -1,6 +1,6 @@
 # Supercharge Your Wisdom
 
-This project contains a Streamlit Chat interface and an Luigi ETL Pipeline that processes and stores documents into a Weaviate Vectorstore instance.
+This project contains a Streamlit Chat interface and a Luigi ETL Pipeline that processes and stores documents into a Weaviate Vectorstore instance.
 
 The ETL pipeline performs several tasks, including: converting Jupyter notebooks and Python scripts to Markdown format, cleaning the code blocks in the Markdown files, removing unnecessary files and directories, and uploading the processed data to a Weaviate instance.
 
