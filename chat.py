@@ -5,7 +5,7 @@ from pydantic import BaseModel
 import streamlit as st
 
 DEFAULT_ASSISTANT_PROMPT = "How can I help you?"
-GENERATE_PROMPT = "Act as a helpful Python and Langchain Developer, please reply with the block or blocks of codes and nothing else, skip exlanations: {content}"
+GENERATE_PROMPT = "Act as a helpful Python and Langchain Developer, please reply with the complete number of block or blocks of codes and nothing else, skip explanations: {content}"
 
 class Document(BaseModel):
     """
@@ -152,9 +152,11 @@ class ChatApp:
                             continue
 
                         if content:
+                            st.session_state.messages.append({"role": "help", "content": "Semantic Search Response:"})
                             st.session_state.messages.append({"role": "assistant", "content": content})
 
                         if generativeOpenAI:
+                            st.session_state.messages.append({"role": "help", "content": "Generative Open AI Response:"})
                             st.session_state.messages.append({"role": "assistant", "content": generativeOpenAI})
 
                 except KeyError as ke:
