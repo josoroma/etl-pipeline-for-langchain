@@ -4,6 +4,8 @@ This project contains a Streamlit Chat interface and an Luigi ETL Pipeline that 
 
 The ETL pipeline performs several tasks, including: converting Jupyter notebooks and Python scripts to Markdown format, cleaning the code blocks in the Markdown files, removing unnecessary files and directories, and uploading the processed data to a Weaviate instance.
 
+- https://www.youtube.com/watch?v=R8swIcq549I
+
 [![Watch the video](./youtube.jpeg)](https://www.youtube.com/watch?v=R8swIcq549I)
 
 - [Supercharge Your Wisdom](#supercharge-your-wisdom)
