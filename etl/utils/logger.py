@@ -31,14 +31,14 @@ class Logger:
         logging.info(f'{self.msg["OPEN_PROCESS"]}{message_label}{self.msg["CLOSE"]}: {message}')
 
     def halt(self):
-        self.error("Halting process...")
+        self.error("Halting process...", "")
         sys.exit(1)
 
 def main():
     logger = Logger()
-    logger.ok("Everything is fine.")
-    logger.error("An error has occurred.")
-    logger.walk("Continuing process...")
+    logger.ok("Everything is fine.", "")
+    logger.error("An error has occurred.", "")
+    logger.walk("Continuing process...", "")
     logger.halt()
 
 if __name__ == "__main__":

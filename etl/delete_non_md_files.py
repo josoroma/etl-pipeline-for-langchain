@@ -38,7 +38,7 @@ class DeleteNonMdFiles(luigi.Task):
     This task does not return any value. The result is the deletion of non-.md files.
     """
 
-    default_directory = DATA['LAKE']
+    default_directory = DATA['LAKE_EXTRAS']
     default_date_time = datetime.datetime.now().strftime(DATA["DATETIME"])
 
     directory = luigi.Parameter(default=default_directory)

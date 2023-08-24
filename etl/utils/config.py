@@ -1,8 +1,9 @@
 LOG_LEVEL = "INFO"
 
 DATA = {
-    "URL": "https://github.com/hwchase17/langchain.git",
+    "URL": "https://github.com/langchain-ai/langchain.git",
     "LAKE": "DATA_LAKE",
+    "LAKE_EXTRAS": "DATA_LAKE/docs",
     "LOGS": "LOGS",
     "BACKUPS": "BACKUPS",
     "DATETIME": "%Y-%m-%d_%H:%M:%S",

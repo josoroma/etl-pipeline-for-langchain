@@ -37,7 +37,7 @@ class RemoveEmptyDirectories(luigi.Task):
     This task does not return any value. The result is the removal of empty directories.
     """
 
-    default_directory = DATA['LAKE']
+    default_directory = DATA['LAKE_EXTRAS']
     default_date_time = datetime.datetime.now().strftime(DATA["DATETIME"])
 
     directory = luigi.Parameter(default=default_directory)

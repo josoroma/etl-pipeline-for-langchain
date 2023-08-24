@@ -46,7 +46,7 @@ class Upsert(luigi.Task):
 
     """
 
-    default_directory = DATA['LAKE']
+    default_directory = DATA['LAKE_EXTRAS']
     default_date_time = datetime.datetime.now().strftime(DATA["DATETIME"])
 
     directory = luigi.Parameter(default=default_directory)
