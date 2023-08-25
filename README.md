@@ -1,5 +1,7 @@
 # Supercharge Your Wisdom
 
+Okay, folks, here's the deal. This project is showing us how we can team up OpenAI with our knowledge base or other documents. And the cool part? We can do these fancy 'semantic searches' and even whip up prompts that we can tweak the generation of the LLM response just the way we like.
+
 This project contains a Streamlit Chat interface and a Luigi ETL Pipeline that processes and stores documents into a Weaviate Vectorstore instance.
 
 The ETL pipeline performs several tasks: converting Jupyter notebooks and Python scripts to Markdown format, cleaning the code blocks in the Markdown files, removing unnecessary files and directories, and uploading the processed data to a Weaviate instance.
