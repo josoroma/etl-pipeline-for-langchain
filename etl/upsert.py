@@ -81,7 +81,7 @@ class Upsert(luigi.Task):
 
                 self.manage_weaviate_schema()
 
-                # self.batch_upsert(documents)
+                self.batch_upsert(documents)
             except Exception as e:
                 logger.error(f"An error occurred while running the Luigi Task.", str(e))
                 raise
